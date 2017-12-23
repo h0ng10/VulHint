@@ -13,7 +13,7 @@ enable 是否启用该条规则
 	"php":{
 			"extract": {
 				"keyword": ["extract"],
-				"discription": "extract默认覆盖已有变量",
+				"discription": "Overwrite of variables via extract()",
 				"pattern": "\\b(extract)\\s{0,5}\\(.{0,30}\\$\\w{1,20}((\\[[\"']|\\[)\\${0,1}[\\w\\[\\]\"']{0,30}){0,1}\\s{0,5},{0,1}\\s{0,5}(EXTR_OVERWRITE){0,1}\\s{0,5}\\)",
 				"abais": 0,
 				"bbais": 0,
@@ -37,7 +37,7 @@ enable 是否启用该条规则
 			},
 			"weak_equal": {
 				"keyword": ["=="],
-				"discription": "弱类型比较",
+				"discription": "Weak type comparison",
 				"pattern": "[^=!]==[^=]",
 				"abais": 1,
 				"bbais": -1,
@@ -45,7 +45,7 @@ enable 是否启用该条规则
 			},
 			"class_dynamic_call": {
 				"keyword": ["->$"],
-				"discription": "动态调用",
+				"discription": "Dynamic call",
 				"pattern": "->\\$",
 				"abais": 0,
 				"bbais": 0,
